@@ -1,3 +1,4 @@
+#!/bin/sh
 for d in */; do
 	#echo $d
 	cd "$d"
@@ -5,10 +6,6 @@ for d in */; do
 	do
 		cd ..
 		python -W ignore app.py "$d/$f" candidatos.txt
-		#unzip -p "$f" curriculo.xml > "$f".xml
 	done
 	
 done
-
-
-
